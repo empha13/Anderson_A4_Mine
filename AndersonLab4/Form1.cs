@@ -76,10 +76,10 @@ namespace AndersonLab4
             double price;
             const double MEXICO = 2300.79;
             const double LOCATION  = 2150.50;
-            const string PROGRAMMER = "Josh";
+            const string PROGRAMMER = "Emily";
             const int MIN = 1;
             const int MAX = 10;
-            const double RATE = 0.10;
+            const double RATE = 10;
 
             // TryParse to convert number in People Textbox and validating it is correct datatype
             validPeople = int.TryParse(txtPeople.Text, out number);
@@ -147,7 +147,7 @@ namespace AndersonLab4
                 }
                 lblPrice.Text = price.ToString("c");
                 lblDisplay.Text += "\nPrice: " + lblPrice.Text;
-                grpTripInfo.Show();
+                grpTripInfo.Snow();
                 grpBook.Enabled = false;
             }
             // Switch for a BOGO special, case is true, display message
@@ -155,7 +155,7 @@ namespace AndersonLab4
             {
                 case "1": case "3":
                     DisplayMsg("Special when booking single or triple.\n" + "BOGO Special - Call 555-1212 to recieve another person free!", "Limited Time Offer");
-                    break;
+
             } // Ending switch bracket
 
         } // Ending bracket of parent IF statement
